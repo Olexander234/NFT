@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background: var(--Background, #2B2B2B);
+}
+.full-screen {
+    width: 100%;
+    height: 100vh;
+}
+.header {
+    max-width: 1180px;
+    height: 60px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header__logo {
+    margin-right: 12px;
+}
+.header__logo-txt {
+    font-size: 19px;
+    color: #FFF;
+}
+.header__right {
+    max-width: 607px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__nav {
+}
+.nav__link {
+    color: #fff;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin: 0 20px;
+
+}
+.header__but {
+    width: 152px;
+    height: 60px;
+    padding: 0px 30px;
+    border-radius: 30px;
+    background: #a259ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.but__img {
+}
+.but__txt {
+}
+
+
+.header__mobile{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #000;
+    display: none;
+}
+
+
+
+/* Стилі для великих екранів (дисплей максимум 1199рх) */
+@media (max-width: 1199px) {  }
+
+/* Стилі для середніх екранів (дисплей максимум 991рх) */
+    @media (max-width: 991px) {
+        .header{
+            flex-direction: column;
+        }
+        .header__right{
+            margin: 20px auto;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+
+     }
+
+/* Стилі для малих екранів (дисплей максимум 767рх) */
+    @media (max-width: 767px) {
+        .header__right{
+            display: none;
+        }
+        .header{
+            flex-direction: row;
+        }
+     }
+
+/* Стилі для дуже малих екранів (дисплей максимум 575рх) */
+    @media (max-width: 575px) { 
+        .header{
+            padding: 10px;
+        }
+        .header__logo-txt{
+            max-width: 150px;
+        }
+     }
